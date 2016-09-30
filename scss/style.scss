@@ -1,0 +1,196 @@
+body{
+	box-sizing: border-box;
+	background-image: url(../img/fon.jpg);
+	background-color: black;
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-position: center;
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.title{
+	text-align: center;
+}
+h1, .h1{
+	text-transform: uppercase;
+	font-size: 80px;
+}
+.h1 {
+    color: white;
+    background: rgba(0, 0, 0, 0.61);
+}
+.wrap{
+	width: 70%;
+	margin: 0 auto;
+}
+.game{
+	width: 440px;
+	// height: 540px;
+	float: left;
+	background: black;
+	border-radius: 30px;
+    overflow: hidden;
+    border: 10px solid #193b4b;
+}
+.new_game, .about_game{
+    float: left;
+    text-transform: uppercase;
+    padding: 40px 10px;
+    background: rgba(0, 0, 0, 0.54);
+    color: white;
+    border: 3px solid #193b4b;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    &:hover{
+		background: rgba(255, 246, 246, 0.54);
+    	color: #ae4029;
+    }
+}
+.about_game{
+	font-size: 14px;
+}
+.game__sonar{
+	background: #1d1d1d;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+#game__radar{
+	width: 100%;
+	height: 452px;
+	display: table;
+	position: absolute;
+	background-image: url(../img/radar.png);
+   	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    // transition: all 5s;
+}
+
+.game__sonar_gird {
+    cursor: crosshair;
+    position: relative;
+}
+.gird_coord{
+	width: 40px;
+	height: 40px;
+	border:1px solid #223a22;
+	color: #8bc34a;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+		&.coord{
+			cursor: no-drop;
+		}
+		&.ini:hover{
+		background-color: rgba(139, 195, 74, 0.47);
+		}
+}
+#game__control_panel {
+    padding: 10px 0;
+}
+#tablo{
+	float: left;
+	width: 30%;
+}
+.nearby_enemy, .ship_rockets{
+	width: 50%;
+    margin: 0 auto;
+	padding-left: 30px;
+	font-size: 20px;
+    font-weight: bold;
+    color: #8bc34a;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+.nearby_enemy{
+
+	background-image: url(../img/enemy.png);
+	margin-bottom: 10px;	
+
+}
+.ship_rockets{
+
+	background-image: url(../img/rocket.png);
+
+}
+.game__sonar_panel{
+	float: right;
+	width: 70%;
+	text-align: center;
+}
+.panel_getcoord{
+	width: 45%;
+	margin-bottom: 1px;
+	border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #8bc34a;
+    background: #174717;
+}
+.panel_fire{
+	width: 90%;
+	background: #8a0e05;
+    color: red;
+    font-weight: bold;
+    height: 30px;
+    border: 2px ridge #b93333;
+    border-radius: 0 0 30px 30px;
+    display: inline-block;
+    	& span{
+    	    vertical-align: sub;
+		    text-transform: uppercase;
+		    cursor: context-menu;
+    	}
+    	&:hover{
+    		background: red;
+    		border-style: groove;
+    		color: #a20000;
+    	}
+}
+.ship{
+	background-image: url(../img/ship.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ship_dead{
+	background-image: url(../img/deadShip.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.miss{
+	background-image: url(../img/miss.png);
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foot{
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.76);
+    border-top: 6px groove #929799;
+    padding: 50px;
+	color: white;
+	font-size: 14px;
+    & a{
+    	color: white;
+
+    }
+}
+.autor{
+	float: left;
+}
+.sourse{
+	float: right;
+}
